@@ -104,8 +104,10 @@ body {
   font-size: 16px; }
 
 /*  ----------------------- HEADER --------------------------- */
+div#headerWrapper {
+  background-color: #424e64; }
+
 header {
-  background-color: #424e64;
   color: #bbc2ca;
   padding: 1rem 2%; }
   header form {
@@ -203,9 +205,11 @@ main div.pop {
     font-weight: 700; }
 
 /*  ----------------------- FOOTER --------------------------- */
-footer {
-  width: 100%;
+div#footerWrapper {
   background-color: #424e64; }
+
+footer {
+  width: 100%; }
   footer p {
     text-align: center;
     color: #bbc2ca;
@@ -242,6 +246,10 @@ footer {
       font-size: 5rem; } }
 @media only screen and (min-width: 60rem) {
   /*  ----------------------- BODY --------------------------- */
+  header, nav, main, footer {
+    max-width: 60rem;
+    margin: 0 auto; }
+
   /*  ----------------------- NAVIGATION --------------------------- */
   nav ul {
     margin-left: 2%;
@@ -264,5 +272,3 @@ footer {
     clear: none; }
   main div.blog article:nth-child(3n+1) {
     clear: left; } }
-
-/*# sourceMappingURL=styles.css.map */

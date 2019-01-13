@@ -13,8 +13,8 @@ body{
 
 
 /*  ----------------------- HEADER --------------------------- */
+div#headerWrapper{background-color: $primaryColor;} // header stretches 100% across screen but header stays in center so right above main content
 header {
-    background-color: $primaryColor;
     color: $secondaryColor;
     padding: 1rem $gutter;
     
@@ -78,6 +78,7 @@ nav {
     } // end hover
     
 } // end nav
+
 
 
 /*  ----------------------- MAIN --------------------------- */
@@ -146,21 +147,10 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*  ----------------------- FOOTER --------------------------- */
+div#footerWrapper{background-color: $primaryColor;}
 footer {
     width: 100%;
-    background-color: $primaryColor;
     
     p {
         text-align: center;
@@ -172,6 +162,7 @@ footer {
     p a {color: $secondaryColor;}
     
 } // end footer
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
